@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+html, body{
+  box-sizing: border-box;
+  height: 100%;
+  padding:0;
+  margin:0;
+  width:100%;
+  overflow-x: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*navigation bar styling */
+.nav-container{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  font-size:1.5rem;
+  background-color: rgb(26, 132, 197);
+  color: white;
+  
+}
+
+.nav-left-items{
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 3rem;
+}
+
+.nav-right-items{
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 3rem;
+}
+
+.percussion-link,.string-link,.keyboard-link{
+  color: white;
+  text-decoration: none;
+}
+
+.search-icon,.cart-icon{
+  cursor: pointer;
+}
+.cart-icon{
+  position:relative;
+}
+.cart-count{
+  font-size: 1.3rem;
+  font-weight: 500;
+  width:1.2rem;
+  height:1.2rem;
+  border-radius: 50%;
+  background-color: white;
+  color:rgb(84, 83, 83);
+  position:absolute;
+  right: -1rem;
+  top:-.5rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+/*footer styles*/
+.footer-container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238, 237, 237);
+  color: rgb(62, 62, 62);
+  padding-bottom:2rem;
+  
+}
+
+.footer-left-section{
+display:flex;
+flex-direction: column;
+align-items: flex-start;
+padding-left:3rem;
+text-align: left;
+gap:.75rem;
+}
+
+.footer-right-section{
+  display:flex;
+  width: 60%;
+  padding-right: 3rem;
+  justify-content: space-between;
+}
+
+.footer-about{
+  text-align: left;
+  width:45%;
+}
+
+.footer-contact{
+  text-align: left;
+  width:45%;
+}
+
+.copyright-and-socials-container{
+  height:5rem;
+  background-color:rgb(26, 132, 197);
+  display:flex;
+  justify-content:space-between;
+}
+.social-links-container{
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+  padding-right: 4rem;
+  padding-bottom: 1.2rem;
+  gap: 4rem;
+  font-size: 3rem;
+  color: white; 
+}
+.social-links-insta,.social-links-facebook,.social-links-youtube{
+  cursor: pointer;
+}
+.copy-right{
+  display: flex;
+  align-items: center;
+  padding-left: 2.5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*home page css*/
+.carousel{
+  height: calc(100vh - 80px );
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+    
+.images-container{
+  width: 300vw;
+  display: flex;
+  height: 100%;
+  transition: all 1s ease;
+}
+.carousel-img1, .carousel-img2,.carousel-img3{
+ width: 100vw;
+  height:100%;
+  object-fit: cover;
+}
+.next-image{
+  display: flex;
+  color: white;
+  width: fit-content;
+  left: 0;
+  right:0;
+  margin:auto;
+  bottom: 12rem;
+  position: absolute;
+  gap: .7rem;
+}
+.carousel-icon1, .carousel-icon2{
+cursor: pointer;
+}
+/* instruement style*/
+.instruments{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
