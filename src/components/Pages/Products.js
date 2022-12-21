@@ -1,7 +1,7 @@
 import instruments from '../instruments'
 import { useParams } from 'react-router-dom';
 import {useState} from 'react'
-import Instruments from '../instruments';
+import Instruments from '../instrumentDisplay';
 const Products =()=>{
     const instrumentId = parseInt(useParams().id)
     const [maxPrice, setMaxPrice] = useState(10000)

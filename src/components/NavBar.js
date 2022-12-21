@@ -1,10 +1,13 @@
 import {Link} from "react-router-dom"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import Search from '@mui/icons-material/Search';
+import {useState} from 'react';
 //import MobileMenu from '@mui/icons-material/Menu';
 
 
 const NavBar = () => {
+
+    const [cartOpen,setCartOpen] =useState(false)
     return (
         <div className="nav-bar">
             <div className="nav-container">
@@ -27,7 +30,7 @@ const NavBar = () => {
                     <div className="search-icon">
                         <Search/>
                         </div>
-                    <div className="cart-icon">
+                    <div className="cart-icon" onClick={()=>{setCartOpen(true)}}>
                         <ShoppingCartIcon/>
                         <span className="cart-count">0</span>
                     </div>
