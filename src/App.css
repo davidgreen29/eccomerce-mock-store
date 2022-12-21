@@ -6,6 +6,7 @@ html, body{
   width:100%;
   overflow-x: hidden;
 }
+
 /*navigation bar styling */
 .nav-container{
   display: flex;
@@ -15,7 +16,6 @@ html, body{
   font-size:1.5rem;
   background-color: rgb(26, 132, 197);
   color: white;
-  
 }
 
 .nav-left-items{
@@ -66,6 +66,7 @@ html, body{
   background-color: rgb(238, 237, 237);
   color: rgb(62, 62, 62);
   padding-bottom:2rem;
+
   
 }
 
@@ -160,4 +161,95 @@ cursor: pointer;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+/*product styling*/
+
+.product{
+  height: calc(100vh - 296.867px ); /* 296.876px is the height of my footer*/
+  padding-top: 4rem;
+  padding-left: 4rem;
+  display: flex;
+  gap: 50px;
+}
+
+.product-images-container{
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  
+}
+.small-images{
+  flex:1;
+}
+.small-images img{
+  width: 100%;
+  max-height: 10rem;
+  object-fit: cover;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.main-display-image{
+  flex: 6;
+}
+.main-display-image img{
+  max-width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+}
+
+.product-info{
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  padding-right: 2.5rem;
+ 
+}
+.product-price{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.product-description{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.amount-to-cart{
+  margin-top: 1rem;
+  display: flex;
+  gap:.4rem;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight:500;
+}
+
+.amount-to-cart button{
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: .3rem;
+}
+
+.add-to-shoppingCart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap:.2rem;
+  min-height: 2rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: rgb(26, 132, 197);
+  color: white;
+  border: none;
+  border-radius: .3rem;
+  padding: .5em;
+  cursor: pointer;
+}
+
+/*shopping cart styles */
 
