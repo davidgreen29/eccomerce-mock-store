@@ -5,8 +5,8 @@
 /.pnp
 .pnp.js
 
-.instrumentDisplay
-
+/components/instrumentDisplay.js
+/components/instrument.js
 # testing
 /coverage
 
