@@ -5,8 +5,9 @@
 /.pnp
 .pnp.js
 
-./instrumentDisplay
-./instruments
+/components/instrumentDisplay
+/components/instruments
+/package-lock.json
 
 # testing
 /coverage
