@@ -1,0 +1,3 @@
+This is a mock ecommerce store I am creating in React I plan to have it done very soon.
+for this app I am using react and pure CSS. I also plan to use a CMS with sql to handle the product info.
+later I will build an api to handle this data instead
